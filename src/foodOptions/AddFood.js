@@ -108,3 +108,4 @@ function AddFoodForm() {
         </div>
     )
 }
+export default AddFoodForm;

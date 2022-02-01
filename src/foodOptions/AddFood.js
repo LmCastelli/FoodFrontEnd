@@ -15,7 +15,7 @@ const initialValues = {
 
 function AddFoodForm() {
     const [foodValues, setFoodValues] = useState(initialValues)
-    const navigate = useNavigate()
+    const navigate = useNavigate() 
 
     const handleChange = e => {
         setFoodValues({...foodValues, [e.target.name]: e.target.value})
@@ -26,7 +26,7 @@ function AddFoodForm() {
         axios.post(`${baseURL}`, foodValues)
             .then(resp => {
                 console.log(resp)
-            //navigate somewhere
+                navigate("/food")
             })
             .catch(err => {
                 console.log(err)

@@ -11,7 +11,7 @@ export default function Header() {
                 <NavLink to="/add">
                     Add Food
                 </NavLink>
-                <NavLink to="food">
+                <NavLink to="/food">
                     See Food
                 </NavLink>
             </nav>

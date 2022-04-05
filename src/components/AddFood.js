@@ -9,8 +9,8 @@ const initialValues = {
     purpose: "", 
     price: 0,
     delivers: "",
-    unhealthy: true,
-    heavy: true, 
+    unhealthy: "",
+    heavy: "", 
 }
 
 function AddFoodForm() {

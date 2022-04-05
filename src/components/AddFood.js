@@ -23,12 +23,13 @@ function AddFoodForm() {
 
     const handleSubmit = e => {
         e.preventDefault()
-        axios.post(`${baseURL}`, foodValues)
+        axios.post("https://food-for-beb.herokuapp.com/", foodValues)
             .then(resp => {
                 console.log(resp)
                 navigate("/food")
             })
             .catch(err => {
+                console.log(foodValues)
                 console.log(err)
             })
     }

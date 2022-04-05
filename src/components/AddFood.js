@@ -103,6 +103,7 @@ function AddFoodForm() {
                         maxLength="3"
                         required="true"
                     />
+                    <button>Add This Food</button>
                 </form>
             </section>
         </div>

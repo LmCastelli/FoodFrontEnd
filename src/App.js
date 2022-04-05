@@ -4,6 +4,7 @@ import EditFoodForm from "./components/EditFood"
 import HomePage from "./components/Homepage.js"
 import Header from "./components/Header"
 import FoodList from "./components/FoodList"
+import Food from "./components/Food"
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
           <Route exact path="/" element={<HomePage />} />
           <Route path="/add" element={<AddFoodForm />} />
           <Route path="/food" element={<FoodList />} />
-          <Route path="/food/:id" />
+          <Route path="/food/:id" element={<Food />}/>
           <Route path="/food/edit/:id" element={<EditFoodForm />} />
         </Routes>
     </div>
